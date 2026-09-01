@@ -1,0 +1,13 @@
+[mgr]
+show_hidden = true
+sort_dir_first = true
+
+[opener]
+default = [
+  { run = 'open "$@"', orphan = true, desc = "Open in Default App" }
+]
+
+[open]
+rules = [
+ { mime = "*", use="default" },
+]
